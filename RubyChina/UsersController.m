@@ -219,6 +219,7 @@ NSString * const TopicCellIdentifier = @"TopicCell";
     if (indexPath.section == 0) {        
         CGSize constraint = CGSizeMake(320 - 2 * 10, 20000.0f);
         
+        //check self.user.bio == <null>
         CGSize size = [self.user.bio sizeWithFont:[UIFont systemFontOfSize:16.0] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
         height = size.height + 120.0f;
     }else{
